@@ -4,14 +4,13 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                git branch:'main', url 'git branch: 'main', url: 'https://github.com/RahulVarne/backend-angular.git'
+                git branch: 'main', url: 'https://github.com/RahulVarne/backend-angular.git'
             }
         }
-        stage('build') {
+        stage('Build') {
             steps {
                 sh 'mvn clean package'
             }
         }
-        
     }
 }
