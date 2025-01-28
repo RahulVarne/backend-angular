@@ -30,7 +30,7 @@ pipeline {
                         docker push 545009863897.dkr.ecr.us-east-2.amazonaws.com/backend:latest
                         docker rmi 545009863897.dkr.ecr.us-east-2.amazonaws.com/backend:latest
                         docker rmi backend
-                        # kubectl apply -f ./yaml/
+                        kubectl apply -f ./yaml/
                     '''
                 }
             }
