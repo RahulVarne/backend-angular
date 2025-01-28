@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cleanup Workspace') {
             steps {
-                deleteDir() // Deletes all files in the workspace
+              sh 'rm -rf * '
             }
         }
         stage('Checkout Code') {
